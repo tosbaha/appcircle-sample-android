@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
     buildToolsVersion "29.0.2"
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
-        applicationId "com.appcircle.appcircle_sample_android"
+        applicationId "com.appcircle.sample_flutter_google_submit_app"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 33
         
         if (System.getenv("AC_APPCIRCLE")) {
             def buildNumber = System.getenv("AC_BUILD_NUMBER")
