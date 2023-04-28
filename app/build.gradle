@@ -8,15 +8,8 @@ android {
         applicationId "com.appcircle.sample_flutter_google_submit_app"
         minSdkVersion 21
         targetSdkVersion 33
-        
-        if (System.getenv("AC_APPCIRCLE")) {
-            def buildNumber = System.getenv("AC_BUILD_NUMBER")
-            versionName = "1.0." + buildNumber
-            versionCode = Integer.valueOf(buildNumber)
-        } else {
-            versionCode 2
-            versionName "1.0.1"
-        }
+        versionCode 1
+        versionName "1.0.0"
         
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "APPCIRCLE_API_URL", "\"${System.env.AC_API_URL}\""
