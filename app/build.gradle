@@ -10,7 +10,7 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0.0"
-        
+        // Test
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "APPCIRCLE_API_URL", "\"${System.env.AC_API_URL}\""
     }
